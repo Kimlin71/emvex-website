@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Emvex | PIS, Predictive Interruption System</title>
+  <meta name="description" content="PIS helps you anticipate emotional dysregulation in real time, so you can pause before it takes over.">
+  <link rel="icon" href="assets/logo/emvex-symbol.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="#home" class="brand"><img src="assets/logo/emvex-logo.svg" alt="Emvex" width="173" height="48"></a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Features</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="container">
+        <h1>Notice the pattern before it overwhelms you</h1>
+        <p class="lead">PIS is a predictive interruption system. Together with the Emvex app, it spots the signs of emotional dysregulation in real time, so you can pause before it takes over.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#contact">Contact us</a>
+          <a class="btn btn-secondary" href="#about">Learn more</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container">
+        <h2>About PIS</h2>
+        <!-- Draft copy: replace after review -->
+        <p>Emvex builds PIS, software that works with the app to anticipate moments of emotional dysregulation. It is designed for people who experience emotional overload, and for the family and friends who support them.</p>
+        <p>PIS supports your own judgement. It does not diagnose or treat anything, and it does not replace professional care.</p>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <h2>What PIS does</h2>
+        <ul class="card-grid">
+          <li class="card">
+            <h3>Real-time prediction</h3>
+            <p>PIS reads signals as they happen and flags rising tension early, giving you time to respond.</p>
+          </li>
+          <li class="card">
+            <h3>App integration</h3>
+            <p>PIS connects to the Emvex app, so prompts appear where you already are.</p>
+          </li>
+          <li class="card">
+            <h3>Privacy first</h3>
+            <p>You decide what is shared and with whom.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <div class="container">
+        <h2>See PIS in action</h2>
+        <div class="gallery-grid">
+          <figure class="clip">
+            <video controls muted playsinline preload="metadata" poster="assets/videos/posters/real-time-prediction.svg">
+              <source src="assets/videos/real-time-prediction.mp4" type="video/mp4">
+              <track kind="captions" src="assets/videos/real-time-prediction.vtt" srclang="en" label="English" default>
+              Your browser does not support embedded video.
+            </video>
+            <figcaption>Real-time prediction</figcaption>
+          </figure>
+          <figure class="clip">
+            <video controls muted playsinline preload="metadata" poster="assets/videos/posters/app-integration.svg">
+              <source src="assets/videos/app-integration.mp4" type="video/mp4">
+              <track kind="captions" src="assets/videos/app-integration.vtt" srclang="en" label="English" default>
+              Your browser does not support embedded video.
+            </video>
+            <figcaption>App integration</figcaption>
+          </figure>
+          <figure class="clip">
+            <video controls muted playsinline preload="metadata" poster="assets/videos/posters/privacy-first.svg">
+              <source src="assets/videos/privacy-first.mp4" type="video/mp4">
+              <track kind="captions" src="assets/videos/privacy-first.vtt" srclang="en" label="English" default>
+              Your browser does not support embedded video.
+            </video>
+            <figcaption>Privacy first</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contact us</h2>
+          <p>Questions about PIS or the app? Send us a message.</p>
+          <p>Or email <a href="mailto:kim@eqit.ai">kim@eqit.ai</a> directly.</p>
+        </div>
+        <form id="contact-form" class="contact-form" novalidate>
+          <div class="field">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+            <p class="error" id="name-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+            <p class="error" id="email-error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <p class="error" id="message-error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn btn-secondary">Send message</button>
+          <p id="form-status" class="form-status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Emvex</strong> · <a href="mailto:kim@eqit.ai">kim@eqit.ai</a></p>
+      <!-- Disclaimer text as approved in Q9; replace after legal review (Q18) -->
+      <p class="disclaimer" lang="sv">PIS är inte en medicinteknisk produkt och ersätter inte professionell vård.</p>
+      <p>&copy; 2026 Emvex</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

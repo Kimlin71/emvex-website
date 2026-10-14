@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="24 30 562 150" role="img" aria-labelledby="title">
+  <title id="title">Emvex symbol</title>
+  <g fill="none" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 170H293L307 133L321 170H574" stroke="#3BA2A4"/>
+    <path d="M275 47L307 133" stroke="#3BA2A4"/>
+    <path d="M307 133L339 47" stroke="#F47C20"/>
+  </g>
+</svg>

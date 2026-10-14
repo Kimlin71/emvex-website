@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="24 26 562 156" role="img" aria-labelledby="title">
+  <title id="title">Emvex</title>
+  <g fill="none" stroke="#1F6F71" stroke-width="14">
+    <path d="M47 40V140M47 47H111M47 90H105M47 133H111"/>
+    <path d="M161 140V47L193 105L225 47V140"/>
+    <path d="M389 40V140M389 47H453M389 90H447M389 133H453"/>
+    <path d="M503 47L567 133M567 47L503 133"/>
+  </g>
+  <g fill="none" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M40 170H293L307 133L321 170H574" stroke="#3BA2A4"/>
+    <path d="M275 47L307 133" stroke="#3BA2A4"/>
+    <path d="M307 133L339 47" stroke="#F47C20"/>
+  </g>
+</svg>
