@@ -1,22 +1,37 @@
+<!-- DOCTYPE tells the browser this is a modern HTML5 page -->
 <!DOCTYPE html>
+<!-- lang="en" helps screen readers and search engines know the page language -->
 <html lang="en">
 <head>
+  <!-- UTF-8 lets the page display all characters, including accented letters and symbols -->
   <meta charset="UTF-8">
+  <!-- viewport makes the page scale correctly on phones and tablets -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- The text shown in the browser tab -->
   <title>Emvex | PIS, Predictive Interruption System</title>
+  <!-- A short description shown in search engine results -->
   <meta name="description" content="PIS helps you anticipate emotional dysregulation in real time, so you can pause before it takes over.">
+  <!-- The small icon shown in the browser tab (favicon) -->
   <link rel="icon" href="assets/logo/emvex-symbol.svg" type="image/svg+xml">
+  <!-- Load the site's stylesheet so all the visual styles are applied -->
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
+  <!-- Skip link lets keyboard and screen-reader users jump straight to the main content -->
   <a class="skip-link" href="#main">Skip to content</a>
 
+  <!-- Sticky header bar that stays at the top of the page as you scroll -->
   <header class="site-header">
+    <!-- container centres the content; nav-wrap lays logo and nav side by side -->
     <div class="container nav-wrap">
+      <!-- Clicking the logo scrolls back to the top of the page -->
       <a href="#home" class="brand"><img src="assets/logo/emvex-logo.svg" alt="Emvex" width="173" height="48"></a>
+      <!-- Hamburger button: only visible on small screens; aria-expanded tracks open/closed state -->
       <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Menu">
+        <!-- Three <span> elements are styled into the three lines of the hamburger icon -->
         <span class="nav-toggle-icon" aria-hidden="true"><span></span><span></span><span></span></span>
       </button>
+      <!-- Main navigation links; aria-label gives it a name for screen readers -->
       <nav id="site-nav" class="site-nav" aria-label="Main">
         <ul>
           <li><a href="#about">About</a></li>
@@ -28,30 +43,63 @@
     </div>
   </header>
 
+  <!-- main wraps all the page content; id="main" is the target for the skip link above -->
   <main id="main">
+
+    <!-- ── HERO SECTION ──────────────────────────────────────────────── -->
+    <!-- The large banner at the top of the page -->
     <section id="home" class="hero">
-      <div class="container">
-        <h1>Notice the pattern before it overwhelms you</h1>
-        <p class="lead">PIS is a predictive interruption system. Together with the Emvex app, it spots the signs of emotional dysregulation in real time, so you can pause before it takes over.</p>
-        <div class="hero-actions">
-          <a class="btn btn-primary" href="#contact">Contact us</a>
-          <a class="btn btn-secondary" href="#about">Learn more</a>
+      <div class="container hero-layout">
+        <!-- Left column: headline, description, and call-to-action buttons -->
+        <div class="hero-copy">
+          <p class="eyebrow">A more thoughtful kind of support</p>
+          <h1>Notice the pattern before it overwhelms you</h1>
+          <p class="lead">PIS is a predictive interruption system. Together with the Emvex app, it spots the signs of emotional dysregulation in real time, so you can pause before it takes over.</p>
+          <div class="hero-actions">
+            <!-- Primary call-to-action button scrolls to the contact form -->
+            <a class="btn btn-primary" href="#contact">Contact us <span aria-hidden="true">↗</span></a>
+            <!-- Secondary text link scrolls down to the About section -->
+            <a class="text-link" href="#about">Discover PIS <span aria-hidden="true">↓</span></a>
+          </div>
+        </div>
+        <!-- Right column: decorative graphic (hidden from screen readers) -->
+        <div class="hero-art" aria-hidden="true">
+          <!-- Elliptical orbit rings drawn purely with CSS borders -->
+          <div class="hero-orbit hero-orbit-outer"></div>
+          <div class="hero-orbit hero-orbit-inner"></div>
+          <!-- Two coloured dot signals that sit on the orbits -->
+          <span class="hero-signal hero-signal-one"></span>
+          <span class="hero-signal hero-signal-two"></span>
+          <!-- Card-like note that floats in the centre of the graphic -->
+          <div class="hero-note">
+            <span class="hero-note-label">EMVEX&nbsp; / &nbsp;PIS</span>
+            <span class="hero-note-title">Notice a change.<br>Make space.</span>
+            <!-- Small status indicator at the bottom of the card -->
+            <span class="hero-note-footer"><span class="status-dot"></span> Room to respond</span>
+          </div>
         </div>
       </div>
     </section>
 
+    <!-- ── ABOUT SECTION ─────────────────────────────────────────────── -->
+    <!-- Brief description of what Emvex and PIS are -->
     <section id="about" class="section">
       <div class="container">
-        <h2>About PIS</h2>
+          <p class="eyebrow">Technology with people at the center</p>
+          <h2>Support that starts with understanding.</h2>
         <!-- Draft copy: replace after review -->
         <p>Emvex builds PIS, software that works with the app to anticipate moments of emotional dysregulation. It is designed for people who experience emotional overload, and for the family and friends who support them.</p>
         <p>PIS supports your own judgement. It does not diagnose or treat anything, and it does not replace professional care.</p>
       </div>
     </section>
 
+    <!-- ── FEATURES SECTION ──────────────────────────────────────────── -->
+    <!-- Three feature cards laid out in a responsive grid -->
     <section id="services" class="section">
       <div class="container">
-        <h2>What PIS does</h2>
+          <p class="eyebrow">Designed for the moments that matter</p>
+          <h2>What PIS does</h2>
+        <!-- card-grid uses CSS Grid to automatically wrap cards into rows -->
         <ul class="card-grid">
           <li class="card">
             <h3>Real-time prediction</h3>
@@ -69,13 +117,20 @@
       </div>
     </section>
 
+    <!-- ── GALLERY SECTION ───────────────────────────────────────────── -->
+    <!-- Three demo videos shown side by side -->
     <section id="gallery" class="section">
       <div class="container">
-        <h2>See PIS in action</h2>
+          <p class="eyebrow">A closer look</p>
+          <h2>See PIS in action</h2>
         <div class="gallery-grid">
+          <!-- <figure> groups a video with its caption -->
+          <!-- poster shows a still image while the video hasn't loaded yet -->
+          <!-- preload="metadata" fetches just enough info to show the duration without downloading the whole file -->
           <figure class="clip">
             <video controls muted playsinline preload="metadata" poster="assets/videos/posters/real-time-prediction.svg">
               <source src="assets/videos/real-time-prediction.mp4" type="video/mp4">
+              <!-- <track> provides closed captions for deaf or hard-of-hearing viewers -->
               <track kind="captions" src="assets/videos/real-time-prediction.vtt" srclang="en" label="English" default>
               Your browser does not support embedded video.
             </video>
@@ -101,17 +156,25 @@
       </div>
     </section>
 
+    <!-- ── CONTACT SECTION ───────────────────────────────────────────── -->
+    <!-- Side-by-side layout: intro text on the left, form on the right -->
     <section id="contact" class="section">
       <div class="container contact-grid">
+        <!-- Left: short intro and direct email fallback -->
         <div>
-          <h2>Contact us</h2>
+          <p class="eyebrow">Start a conversation</p>
+          <h2>Let’s talk about what matters to you.</h2>
           <p>Questions about PIS or the app? Send us a message.</p>
           <p>Or email <a href="mailto:kim@eqit.ai">kim@eqit.ai</a> directly.</p>
         </div>
+        <!-- novalidate turns off the browser's built-in validation so our JS handles it instead -->
         <form id="contact-form" class="contact-form" novalidate>
+          <!-- Each .field wraps a label, input, and its error message together -->
           <div class="field">
             <label for="name">Name</label>
+            <!-- autocomplete="name" lets the browser pre-fill saved names -->
             <input id="name" name="name" type="text" autocomplete="name" required>
+            <!-- aria-live="polite" means screen readers announce the error without interrupting the user -->
             <p class="error" id="name-error" aria-live="polite"></p>
           </div>
           <div class="field">
@@ -121,25 +184,31 @@
           </div>
           <div class="field">
             <label for="message">Message</label>
+            <!-- rows="5" sets the default visible height of the text area -->
             <textarea id="message" name="message" rows="5" required></textarea>
             <p class="error" id="message-error" aria-live="polite"></p>
           </div>
           <button type="submit" class="btn btn-secondary">Send message</button>
+          <!-- Displays success or error feedback after the user submits -->
           <p id="form-status" class="form-status" aria-live="polite"></p>
         </form>
       </div>
     </section>
   </main>
 
+  <!-- ── FOOTER ────────────────────────────────────────────────────── -->
   <footer class="site-footer">
     <div class="container">
       <p><strong>Emvex</strong> · <a href="mailto:kim@eqit.ai">kim@eqit.ai</a></p>
       <!-- Disclaimer text as approved in Q9; replace after legal review (Q18) -->
+      <!-- lang="sv" tells screen readers to switch to a Swedish voice for this line -->
       <p class="disclaimer" lang="sv">PIS är inte en medicinteknisk produkt och ersätter inte professionell vård.</p>
+      <!-- &copy; renders the © copyright symbol -->
       <p>&copy; 2026 Emvex</p>
     </div>
   </footer>
 
+  <!-- Load the JavaScript file last so the HTML is fully parsed before the script runs -->
   <script src="js/main.js"></script>
 </body>
 </html>
